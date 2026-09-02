@@ -35,7 +35,7 @@ function App() {
 
   return (
     <>
-      <h1>OluwatobilobaGp</h1>
+      <h1>OluwatobilobaGp GlobalTech</h1>
 
       {ProfileCards.map((profilecard, index) => (
         <ProfileCard
