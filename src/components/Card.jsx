@@ -1,0 +1,9 @@
+
+export default function Card({ title, children }) {
+  return (
+    <section className="card">
+      <h1>{title}</h1>
+      {children}
+    </section>
+  )
+}

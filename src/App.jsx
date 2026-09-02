@@ -1,4 +1,5 @@
 import { avatarImage, coverImage, profilePicture } from "./assets"
+import Card from "./components/Card"
 import FirstCard from "./components/FirstCard"
 import ProfileCard from "./components/ProfileCard"
 
@@ -55,7 +56,23 @@ function App() {
         />
       ))}
 
-      <FirstCard />
+      {/* <FirstCard /> */}
+
+      <Card title="Headline">
+        {/* children */}
+        <p> lorem ipsum dolor sit amet </p>
+        <FirstCard />
+        <table>
+          <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+          </tr>
+        </table>
+        <form action="">
+          <input type="text" name="" id="" />
+        </form>
+      </Card>
 
 
     </>
