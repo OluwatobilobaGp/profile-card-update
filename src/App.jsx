@@ -1,9 +1,15 @@
 import { avatarImage, coverImage, profilePicture } from "./assets"
 import Card from "./components/Card"
+import Dashboard from "./components/Dashboard"
 import FirstCard from "./components/FirstCard"
+import LoginPage from "./components/LoginPage"
 import ProfileCard from "./components/ProfileCard"
+import { useState } from "react";
 
 function App() {
+
+  const [count, setCount] = useState(0);
+  const [text, setText] = useState("");
 
   const ProfileCards = [
     {
@@ -34,6 +40,8 @@ function App() {
     }
   ]
 
+  const isLogin = true;
+
   return (
     <>
       <h1>OluwatobilobaGp GlobalTech</h1>
@@ -58,17 +66,28 @@ function App() {
 
       {/* <FirstCard /> */}
 
+      {isLogin && <p>Welcome back, OluwatobilobaGp</p>}
+
+      {isLogin ? <p> You are logged In </p> : <p> You are not logged In </p>}
+
+      {isLogin ? <Dashboard />  : <LoginPage />}
+
+      <button onClick={ () => { setCount(count + 1); console.log(count);  } }>
+        CLick Me
+      </button>
+
+      <div>{count}</div>
+
+
+      <input type="text" value={text} onChange={(e) => setText(e.target.value)} />
+
+      <div>{text}</div>
+
       <Card title="Headline">
         {/* children */}
         <p> lorem ipsum dolor sit amet </p>
         <FirstCard />
-        <table>
-          <tr>
-            <td>1</td>
-            <td>2</td>
-            <td>3</td>
-          </tr>
-        </table>
+        
         <form action="">
           <input type="text" name="" id="" />
         </form>
