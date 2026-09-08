@@ -5,6 +5,7 @@ import FirstCard from "./components/FirstCard"
 import LoginPage from "./components/LoginPage"
 import ProfileCard from "./components/ProfileCard"
 import { useState } from "react";
+import Todo from "./components/Todo"
 
 function App() {
 
@@ -92,6 +93,8 @@ function App() {
           <input type="text" name="" id="" />
         </form>
       </Card>
+
+      <Todo />
 
 
     </>
