@@ -6,8 +6,8 @@ export default function Todo() {
     const [todos, setTodos] = useState([]);
     const [task, setTask] = useState("");
 
-    const addTodo = (reactDeepartment) => {
-        reactDeepartment.preventDefault();
+    const addTodo = (dumebi) => {
+        dumebi.preventDefault();
 
         if (!task.trim()) return;
 

@@ -6,6 +6,7 @@ import LoginPage from "./components/LoginPage"
 import ProfileCard from "./components/ProfileCard"
 import { useState } from "react";
 import Todo from "./components/Todo"
+import { ProductCard } from "./components/ProductCard"
 
 function App() {
 
@@ -96,6 +97,8 @@ function App() {
 
       <Todo />
 
+      <ProductCard productId={2} />
+      <ProductCard productId={4} />
 
     </>
   )
