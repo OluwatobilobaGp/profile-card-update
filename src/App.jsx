@@ -7,6 +7,7 @@ import ProfileCard from "./components/ProfileCard"
 import { useState } from "react";
 import Todo from "./components/Todo"
 import { ProductCard } from "./components/ProductCard"
+import Form from './components/Form'
 
 function App() {
 
@@ -17,26 +18,26 @@ function App() {
     {
       name: "OluwatobilobaGp",
       role: "FullStack Developer",
-      avatarImage: { profilePicture },
-      coverImage: { coverImage },
+      avatarImage: profilePicture,
+      coverImage: coverImage,
       badge: "Dev",
       badgeImage: "☑",
       rating: "5.0",
       price: "NGN 1000,000",
-      hour: "1 hour",
+      hours: "1 hour",
       period: "summer",
       dark: true
     },
     {
       name: "Mr tobi",
       role: "FullStack Developer",
-      avatarImage: { avatarImage },
-      coverImage: { coverImage },
+      avatarImage: avatarImage,
+      coverImage: coverImage,
       badge: "Dev",
       badgeImage: "☑",
       rating: "5.0",
       price: "NGN 1000,000",
-      hour: "1 hour",
+      hours: "1 hour",
       period: "summer",
       dark: true
     }
@@ -60,7 +61,7 @@ function App() {
           badgeImage={profilecard.badgeImage}
           rating={profilecard.rating}
           price={profilecard.price}
-          hour={profilecard.hour}
+          hours={profilecard.hours}
           period={profilecard.period}
           dark={profilecard.dark}
         />
@@ -74,7 +75,7 @@ function App() {
 
       {isLogin ? <Dashboard />  : <LoginPage />}
 
-      <button onClick={ () => { setCount(count + 1); console.log(count);  } }>
+      <button onClick={ () => { setCount((prev) => prev + 1); console.log('count updated'); } }>
         CLick Me
       </button>
 
@@ -99,7 +100,7 @@ function App() {
 
       <ProductCard productId={2} />
       <ProductCard productId={4} />
-
+      <Form />
     </>
   )
 }
