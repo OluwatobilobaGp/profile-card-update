@@ -1,0 +1,149 @@
+/* --- Main Hero Section --- */
+
+.hero {
+    background-color: #1A3A34;
+    color: #ffffff;
+    padding: 60px 40px 120px;
+    font-family: Arial, sans-serif;
+}
+
+.hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+
+/* --- Left Side: Text --- */
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-rating {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.stars {
+    color: #FACC15;
+    margin-right: 8px;
+}
+
+.hero-text h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: left;
+    margin: 0 0 20px 0;
+}
+
+.hero-subtext {
+    color: #D1D5DB;
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 450px;
+    margin-bottom: 30px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.app-btn {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.hero-stats {
+    display: flex;
+    gap: 40px;
+}
+
+.stat-item h3 {
+    font-size: 24px;
+    margin: 0 0 5px 0;
+}
+
+.stat-item p {
+    font-size: 12px;
+    color: #9CA3AF;
+    margin: 0;
+}
+
+.hero .hero-stats .stat-item {
+    flex: none;
+    border: 0;
+    padding: 0;
+}
+
+.hero .hero-stats .stat-item h3 {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 0 5px;
+}
+
+.hero .hero-stats .stat-item p {
+    color: #9ca3af;
+    font-size: 12px;
+    margin: 0;
+}
+
+.hero-image-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+
+.hero-img {
+    display: block;
+    width: 100%;
+    height: 400px;
+    border-radius: 150px 150px 20px 20px;
+    object-fit: cover;
+    object-position: center 25%;
+}
+
+@media (max-width: 800px) {
+    .hero {
+        padding: 40px 24px 60px;
+    }
+    .hero-container {
+        flex-direction: column;
+    }
+    .hero-image-wrapper {
+        width: 100%;
+    }
+    .hero-img {
+        height: 300px;
+    }
+}
+
+.section-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.35;
+    color: #172d2d;
+    margin-bottom: 60px;
+}

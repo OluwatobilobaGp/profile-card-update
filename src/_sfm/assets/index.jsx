@@ -1,7 +1,3 @@
-// import coverImage from "./cover-image.jpg";
-// import avatarImage from "./avatar.jpg";
-// import badgeImage from "./icon.jpg";
-import profilePicture from "./profile-picx.jpeg";
 import heroImg from "./hero.png";
 import reactLogo from "./react.svg";
 import viteLogo from "./vite.svg";
@@ -20,25 +16,21 @@ import appleLogo from "./apple.jpg";
 import avtImg from "./avt.jpg";
 import gradImg from "./grad.jpg";
 
-
-export {
-    coverImage,
-    heroImg,
-    avatarImage,
-    badgeImage,
-    profilePicture,
-    reactLogo,
-    viteLogo,
-    profileImg,
-    excCoverImage,
-    teddy,
-    amazonLogo,
-    googleLogo,
-    dribbleLogo,
-    figmaLogo,
-    airbnbLogo,
-    appleLogo,
-    avtImg,
-    gradImg
-
-};
+export { heroImg, 
+        reactLogo,
+        viteLogo,
+        profileImg,
+        coverImage, 
+        excCoverImage,
+        avatarImage, 
+        badgeImage, 
+        teddy,
+        amazonLogo,
+        googleLogo,
+        dribbleLogo,
+        figmaLogo,
+        airbnbLogo,
+        appleLogo,
+        avtImg,
+        gradImg
+    };
